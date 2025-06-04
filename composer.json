@@ -1,0 +1,30 @@
+{
+    "name": "evlimma/pluralizeword",
+    "description": "Transforming the word into the plural | Transformando a palavra para o plural",
+    "type": "library",
+    "version": "1.0",
+    "keywords": [
+        "Evlimma",
+        "CodigoSpace",
+        "pluralizeword",
+        "palavra",
+        "plural"
+    ],
+    "homepage": "http://www.codigospace.com.br",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Everton Lima",
+            "email": "contato@codigospace.com.br",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "evlimma\\pluralizeword\\": "src"
+        }
+    }
+}
