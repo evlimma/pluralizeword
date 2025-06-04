@@ -14,7 +14,7 @@ Transformando a palavra para o plural
 Data Layer is available via Composer:
 
 ```bash
-"evlimma/pluralizeword": "1.0"
+"evlimma/pluralizeword": "1.0.0"
 ```
 
 or run
