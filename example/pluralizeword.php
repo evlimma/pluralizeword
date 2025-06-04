@@ -1,13 +1,15 @@
 <?php
+
+use evlimma\PluralizeWord\PluralizeWord;
+
 require __DIR__ . '../../vendor/autoload.php';
 
-echo formatCountedWord(1, 'pão');      // 1 pão
-echo formatCountedWord(2, 'pão');      // 2 pães
+echo PluralizeWord::format(1, 'pão') . "<br>";           // 1 pão
 
-echo formatCountedWord(1, 'animal');   // 1 animal
-echo formatCountedWord(3, 'animal');   // 3 animais
-
-echo formatCountedWord(1, 'flor', false); // flor
-echo formatCountedWord(4, 'flor', false); // flores
-
-echo formatCountedWord(2, 'irmão');    // 2 irmãos
+$plural = new PluralizeWord();
+echo $plural->format(2, 'pão') . "<br>";                 // 2 pães
+echo $plural->format(1, 'animal') . "<br>";              // 1 animal
+echo $plural->format(3, 'animal') . "<br>";              // 3 animais
+echo $plural->format(1, 'flor', false) . "<br>";         // flor
+echo $plural->format(4, 'flor', false) . "<br>";         // flores
+echo $plural->format(2, 'irmão') . "<br>";               // 2 irmãos

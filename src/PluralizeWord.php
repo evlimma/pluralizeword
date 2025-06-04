@@ -11,9 +11,9 @@ class PluralizeWord
      * @param string $word
      * @param boolean $includeNumber
      */
-    public function __construct(int $number, string $word, bool $includeNumber = true)
+    public static function format(int $number, string $word, bool $includeNumber = true)
     {
-        $finalWord = $this->pluralizeWord($number, $word);
+        $finalWord = self::pluralizeWord($number, $word);
         return $includeNumber ? "{$number} {$finalWord}" : $finalWord;
     }
 
@@ -24,7 +24,7 @@ class PluralizeWord
      * @param string $word
      * @return string
      */
-    function pluralizeWord(int $number, string $word): string
+    public static function pluralizeWord(int $number, string $word): string
     {
         if ($number <= 1) return $word;
 
