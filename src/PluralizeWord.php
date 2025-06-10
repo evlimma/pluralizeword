@@ -30,16 +30,13 @@ class PluralizeWord
 
         $exceptions = [
             'pão' => 'pães',
-            'mão' => 'mãos',
             'cão' => 'cães',
             'alemão' => 'alemães',
-            'irmão' => 'irmãos',
             'charlatão' => 'charlatães',
             'capitão' => 'capitães',
-            'cristão' => 'cristãos',
-            'cidadão' => 'cidadãos',
             'mal' => 'males',
             'cal' => 'cais',
+            'foi' => 'foram',
         ];
 
         if (isset($exceptions[$word])) {

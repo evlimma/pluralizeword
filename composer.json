@@ -2,7 +2,6 @@
     "name": "evlimma/pluralizeword",
     "description": "Transforming the word into the plural | Transformando a palavra para o plural",
     "type": "library",
-    "version": "1.0",
     "keywords": [
         "Evlimma",
         "CodigoSpace",
