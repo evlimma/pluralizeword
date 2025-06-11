@@ -26,7 +26,7 @@ class PluralizeWord
      */
     public static function pluralizeWord(int $number, string $word): string
     {
-        if ($number <= 1) return $word;
+        if ($number === 0) return $word;
 
         $exceptions = [
             'pão' => 'pães',
